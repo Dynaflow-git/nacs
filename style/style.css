@@ -37,13 +37,34 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  margin-inline-end: 12px;
+  margin-inline-end: 8px;
 }
 
-#col-hero, #col-heros{
+/* transparent */
+#col-hero,
+#col-heros .icon-text {
+  background-color: transparent;
+}
+.icon-text span {
   background-color: transparent;
 }
 
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-inline-end: 20px;
+}
+
+#col-heros {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: 14px;
+  gap: 10px;
+  background-color: transparent;
+}
 
 .nav {
   width: 100%;
