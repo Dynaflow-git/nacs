@@ -72,30 +72,23 @@
   background-color: #fff;
 }
 
-#navigation{
+#navigation {
   margin: 0 auto;
   padding: 0;
   align-items: center;
-  display: flex;
 }
 
-#hero-nav{
+#hero-nav {
   margin: 0 auto;
   padding: 0;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-
-
-.logo img{
-    background-color: transparent !important;
-
-  }
-
-
-
-
+.logo img { 
+  background-color: transparent;
+}
 
 #hero-body {
   margin: 0 auto;
