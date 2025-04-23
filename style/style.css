@@ -79,10 +79,21 @@
   display: flex;
 }
 
-#hero-nav img{
-    background-color: transparent;
+#hero-nav{
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo img{
+    background-color: transparent !important;
 
   }
+
+
 
 
 
