@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
+:root {
   --body-font: "Roboto", sans-serif;
   --second-font: "Inter", sans-serif;
 }
-
-
 
 * {
   font-family: "Poppins" sans-serif;
@@ -14,6 +12,10 @@
   align-items: center;
   margin: 0 auto;
   background-color: #181818;
+}
+
+body{
+  height: auto;
 }
 
 #hero {
@@ -97,10 +99,9 @@
   align-items: center;
   width: 100%;
   background-color: transparent;
-
 }
 
-.logo{
+.logo {
   background-color: transparent;
 }
 
@@ -116,18 +117,18 @@
   background-color: transparent !important;
 }
 
-.nav__list li a{
+.nav__list li a {
   text-decoration: none;
   background-color: #fff;
-  color:#181818;
-  font-family: var(--second-font) ;
+  color: #181818;
+  font-family: var(--second-font);
 }
 
-#nav__link{
- padding-right: 100px;
+#nav__link {
+  padding-right: 100px;
 }
 
-.nav__list{
+.nav__list {
   background-color: transparent;
   display: flex;
   list-style: none;
@@ -143,4 +144,61 @@
 #hero-body {
   margin: 0 auto;
   padding: 0;
+  height: 100vh;
 }
+
+/* footer */
+.footer {
+  padding-top: 50rem;
+  margin: 0 ;
+  padding: 0;
+  background-color: #fff;
+  height: 50vh;
+
+}
+
+#spacing-footer{
+  background-color: transparent;
+  padding: 150px;
+  margin: 0 auto;
+}
+
+#footer-logo{
+  background-color: transparent;
+  
+}
+
+/*footer text */
+
+#footer-mid, #footer-end, .span-foot,  .span-footers, .span-footer, .text-decoration-none, .text-title, .text-body{
+  background-color: transparent;
+
+}
+.text-title{
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#footer-end a{
+  color: #181818;
+}
+
+#footer-mid{
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.span-footer{
+  margin-left: 80px;
+}
+.span-footers{
+  margin-left: 58px;
+}
+
+.span-foot{
+  margin-left: 65px;
+}
+/* footer-end */
