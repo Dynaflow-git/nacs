@@ -153,7 +153,7 @@ body{
   margin: 0 ;
   padding: 0;
   background-color: #fff;
-  height: 50vh;
+  height: 65vh;
 
 }
 
@@ -201,4 +201,24 @@ body{
 .span-foot{
   margin-left: 65px;
 }
+
 /* footer-end */
+
+  .underline{
+    width: 80%;
+    height: 3px;
+    background-color: #cacaca;
+  }
+
+  .footer-end, #end-footer,  #end-text p{
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #end-text{
+    text-align: center;
+  }
+
+ 
