@@ -11,10 +11,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #181818;
 }
 
-body{
+body {
   height: auto;
 }
 
@@ -149,119 +148,169 @@ body{
 
 /* Content */
 
-.content{
- padding-left: 100px;
+.content {
+  padding-left: 100px;
 }
 
-#content-row{
+#content-row {
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: ;
   
 }
 
-.content-title{
+.content-title {
   color: #fff;
   font-size: 38px;
   font-weight: bold;
   font-family: var(--second-font);
 }
 
-.sub-title{
+.sub-title {
   color: #fff;
 }
 
 /* icon box */
-.icon-box{
+.icon-box {
   color: #fff;
   font-family: var(--second-font);
   padding: 10%;
   text-align: start;
 }
 
-.icon-box i{
+.icon-box i {
   margin-bottom: 15px;
   padding: 0;
   display: block;
 }
 
-.icon-box p{
+.icon-box p {
   margin: 0;
 }
+
+#hero-body{
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 9)),
+   url('/img/nacs-bg.jpg') center center / cover no-repeat;
+  color: white; 
+ height: 80vh;
+ padding: 0px 0;
+
+}
+
+/* about nacs */
+
+#about{
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.hero-about{
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+#row-about{
+  background-color: #181818;
+  height: 80vh;
+
+}
+
+#col2{
+  background-color: #fff;
+  margin: 0 auto;
+  height: 80vh;
+  padding: 90px;
+}
+
+.title-about{
+  font-weight: bold;
+  font-family: var(--second-font);
+  font-size: 1.9rem;
+}
+
+
 
 /* footer */
 .footer {
   padding-top: 50rem;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   background-color: #fff;
   height: 65vh;
-
 }
 
-#spacing-footer{
+#spacing-footer {
   background-color: transparent;
   padding: 150px;
   margin: 0 auto;
 }
 
-#footer-logo{
+#footer-logo {
   background-color: transparent;
-  
 }
 
 /*footer text */
 
-#footer-mid, #footer-end, .span-foot,  .span-footers, .span-footer, .text-decoration-none, .text-title, .text-body{
+#footer-mid,
+#footer-end,
+.span-foot,
+.span-footers,
+.span-footer,
+.text-decoration-none,
+.text-title,
+.text-body {
   background-color: transparent;
-
 }
-.text-title{
+.text-title {
   font-family: var(--second-font);
   font-weight: bold;
   font-size: 25px;
 }
 
-#footer-end a{
+#footer-end a {
   color: #181818;
 }
 
-#footer-mid{
+#footer-mid {
   margin: 0 auto;
   padding: 0;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
-.span-footer{
+.span-footer {
   margin-left: 80px;
 }
-.span-footers{
+.span-footers {
   margin-left: 58px;
 }
 
-.span-foot{
+.span-foot {
   margin-left: 65px;
 }
 
 /* footer-end */
 
-  .underline{
-    width: 80%;
-    height: 3px;
-    background-color: #cacaca;
-  }
+.underline {
+  width: 80%;
+  height: 3px;
+  background-color: #cacaca;
+}
 
-  .footer-end, #end-footer,  #end-text p{
-    background-color: transparent;
-    margin: 0 auto;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-  }
-  #end-text{
-    text-align: center;
-  }
-
- 
+.footer-end,
+#end-footer,
+#end-text p {
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+#end-text {
+  text-align: center;
+}
