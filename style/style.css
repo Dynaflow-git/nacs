@@ -156,7 +156,6 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  
 }
 
 .content-title {
@@ -188,52 +187,73 @@ body {
   margin: 0;
 }
 
-#hero-body{
+#hero-body {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 9)),
-   url('/img/nacs-bg.jpg') center center / cover no-repeat;
-  color: white; 
- height: 80vh;
- padding: 0px 0;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 9)),
+    url("/img/nacs-bg.jpg") center center / cover no-repeat;
+  color: white;
+  height: 80vh;
+  padding: 0px 0;
 }
 
 /* about nacs */
 
-#about{
+#about {
   max-height: 100vh;
   margin: 0 auto;
   padding: 0;
   align-items: center;
   justify-content: center;
-  
 }
 
-.hero-about{
-  height: 100vh;
+.hero-about {
+  height: 80vh;
   margin: 0 auto;
   padding: 0;
 }
-#row-about{
-  background-color: #181818;
+#row-about {
+  background-color: #050505;
   height: 80vh;
-
 }
 
-#col2{
+#col2 {
   background-color: #fff;
   margin: 0 auto;
   height: 80vh;
   padding: 90px;
 }
 
-.title-about{
+.title-about {
   font-weight: bold;
   font-family: var(--second-font);
   font-size: 1.9rem;
 }
 
+/* git */
+#git-container {
+  width: 100%;
+  height: 40vh;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
+#subtitle-git {
+  font-family: var(--second-font);
+  font-size: 18px;
+}
+#btn-git button {
+  width: 15rem;
+  border-radius: 10px;
+}
+
+#title-git {
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 
 /* footer */
 .footer {
