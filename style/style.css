@@ -147,6 +147,35 @@ body{
   height: 100vh;
 }
 
+/* Content */
+
+.content{
+  padding: 100px;
+}
+
+.content-title{
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: var(--second-font);
+}
+
+.sub-title{
+  color: #fff;
+}
+
+/* icon box */
+.icon-box{
+  color: #fff;
+  font-family: var(--second-font);
+  padding: 10%;
+  text-align: start;
+}
+
+.icon-box i{
+  margin-bottom: 15px;
+}
+
 /* footer */
 .footer {
   padding-top: 50rem;
