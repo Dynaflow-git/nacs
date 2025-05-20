@@ -57,17 +57,16 @@ nav ul li a {
   display: none;
 }
 
-.logo img{
+.logo img {
   width: 150px;
 }
 
 /* topbar */
 
-
 .topbar {
   width: 100%;
   background-color: #22212d;
-  padding: 20px 300px; 
+  padding: 20px 300px;
 }
 
 #toprow {
@@ -76,12 +75,12 @@ nav ul li a {
   justify-content: center;
 }
 
-.icon-text img{
+.icon-text img {
   width: 22px;
   height: 23px;
 }
 
-#col-hero img{
+#col-hero img {
   width: 20px;
   height: 19px;
   margin-inline-end: 7px;
@@ -99,12 +98,9 @@ nav ul li a {
   gap: 8px;
   color: #ffffff;
 }
-#col-heroes{
+#col-heroes {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-
-
-
