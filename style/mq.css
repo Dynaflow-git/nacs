@@ -53,7 +53,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
   }
 
   .topbar {
@@ -99,10 +99,20 @@
   }
 
   /* content */
+
+  /* layer1 */
+  #layer1 {
+    height: 110vh;
+  }
+
+  .background {
+    height: 75%;
+  }
+
   .content {
-    padding: clamp(90px, 2vw, 50px) clamp(15px, 4vw, 40px); /* top/bottom left/right */
+    height: 75%;
+    padding: clamp(150px, 2vw, 50px) clamp(15px, 4vw, 40px); /* top/bottom left/right */
     margin: 0;
-    height: 100%;
   }
 
   .header {
@@ -140,6 +150,19 @@
   }
   .box-text {
     font-size: clamp(0.9375rem, 0.7143rem + 0.5952vw, 1rem);
+  }
+
+  /* clients */
+  .clients {
+    height: 280px;
+    padding: 40px 5px;
+    margin: 0 auto;
+  }
+
+  .clients:before,
+  .clients:after {
+    width: 200px;
+    height: 100%;
   }
 }
 
@@ -436,7 +459,7 @@
     height: 60px;
   }
 
-  .box-item{
+  .box-item {
     font-size: 10px;
   }
 
