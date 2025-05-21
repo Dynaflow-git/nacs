@@ -110,7 +110,7 @@ nav ul li a {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -120,7 +120,7 @@ nav ul li a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 70%;
   z-index: 0;
 }
 .background img {
@@ -146,7 +146,6 @@ nav ul li a {
   justify-content: start;
   text-align: start;
   padding: 20px 300px;
-
   position: relative;
   z-index: 1;
   color: white;
@@ -162,7 +161,6 @@ nav ul li a {
   font-weight: bold;
   text-align: left;
 }
-
 
 .header span {
   font-size: 18px;
@@ -213,4 +211,67 @@ nav ul li a {
   gap: 10px;
   padding: 0;
   margin: 0;
+}
+
+/* partners slideshow */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+.clients {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #232323;
+  height: auto;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.clients p {
+  color: #ecf3fe;
+  font-size: 20px;
+}
+
+.clients:before,
+.clients:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.clients:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #000000);
+}
+
+.clients:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000);
+}
+
+.clients:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+  display: flex;
+}
+
+.logos-slide img {
+  height: 150px;
+  width: auto;
+  margin: 0 40px;
 }
