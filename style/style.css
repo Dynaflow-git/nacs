@@ -227,7 +227,7 @@ nav ul li a {
 }
 .clients {
   overflow: hidden;
-  padding: 50px 0;
+  padding: 30px 0;
   background: #232323;
   height: 100%;
   white-space: nowrap;
@@ -238,6 +238,7 @@ nav ul li a {
 .clients p {
   color: #ecf3fe;
   font-size: 20px;
+  font-family: var(--first-font);
 }
 
 .clients:before,
@@ -271,12 +272,13 @@ nav ul li a {
 }
 
 .logos-slide img {
-  height: 150px;
+  height: 110px;
   width: auto;
   margin: 0 40px;
 }
 
 /* product */
+
 .product {
   height: 100vh;
   width: 100%;
@@ -287,4 +289,92 @@ nav ul li a {
   font-size: 40px;
   font-family: var(--first-font);
   font-weight: bold;
+}
+
+/* about us */
+.about-us {
+  padding: 100px 300px;
+  width: 100%;
+  height: 90vh;
+  background-color: #f3f6ff;
+}
+
+#row-details {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-title p {
+  line-height: 1.4;
+}
+#col-details {
+  height: 100%;
+  padding: 5%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.bground {
+  border-radius: 12px; /* smooth rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* soft shadow */
+  overflow: hidden; /* optional: hides content overflow on rounded edges */
+  background-color: #181818;
+  height: 90%;
+  width: 90%;
+}
+
+.bground img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* card */
+.card {
+  height: 100%;
+  max-height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top.fixed-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* footer */
+
+footer {
+  max-width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 100px 300px;
+}
+
+.footer-text {
+  color: #1a1a1a;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 25%;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text-muted {
+  color: rgb(90, 90, 90);
+  font-size: small;
 }
