@@ -104,3 +104,113 @@ nav ul li a {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+
+/* layer1 */
+#layer1 {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 0;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* dark shadow effect */
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6); /* optional extra shadow */
+  pointer-events: none;
+}
+
+.content {
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: start;
+  text-align: start;
+  padding: 20px 300px;
+
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* text */
+
+.header p {
+  font-family: var(--first-font);
+  margin-top: 150px;
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.header span {
+  font-size: 18px;
+  font-family: var(--first-font);
+  line-height: 1.4;
+  font-weight: 200;
+  text-align: left;
+}
+
+/* box */
+
+.box-container {
+  display: flex;
+  gap: 20px; /* space between boxes */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.box-item {
+  text-align: center;
+}
+
+.box-text {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #181818; /* blue box */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}

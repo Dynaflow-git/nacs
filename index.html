@@ -16,16 +16,18 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- font awesome -->
+
+    <!-- Font Awesome 6 CDN -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
     <!-- for css testing and debugging -->
     <style></style>
   </head>
   <body>
+    <!-- header  -->
     <container>
       <div class="topbar">
         <div class="row" id="hero">
@@ -50,10 +52,10 @@
         </div>
       </div>
     </container>
-
+    <!-- nav bar -->
     <nav>
       <div class="logo">
-        <img src="./img/nacs-logo.png" alt=""/>
+        <img src="./img/nacs-logo.png" alt="" />
       </div>
       <ul id="menuList">
         <li class="close-btn">
@@ -69,6 +71,65 @@
         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
       </div>
     </nav>
+
+    <!-- First layer -->
+    <div class="container-fluid" id="layer1">
+      <div class="background">
+        <img src="./img/nacs-bg.jpg" alt="bg" />
+        <div class="overlay"></div>
+      </div>
+      <div class="content">
+        <!-- bg -->
+        <div class="header">
+          <p class="text">
+            Driving Industrial Success <br />
+            With Reliable, Tailored Services
+          </p>
+          <span class="text">
+            Powering Your Business with Cutting Industrial Solutions
+          </span>
+        </div>
+
+        <!-- box -->
+
+        <div class="box-container mt-5">
+          <div class="box-item">
+            <div class="box">
+              <i class="fa-solid fa-users-viewfinder fa-3x"></i>
+            </div>
+            <p class="box-text">
+              100+ <br />
+              Clients
+            </p>
+          </div>
+          <div class="box-item">
+            <div class="box">
+              <i class="fa-solid fa-building-user fa-3x"></i>
+            </div>
+            <p class="box-text">
+              Domestic <br />
+              Sales 90%
+            </p>
+          </div>
+          <div class="box-item">
+            <div class="box">
+              <i class="fa-solid fa-chart-line fa-3x"></i>
+            </div>
+            <p class="box-text">
+              Export <br />
+              Sales 90%
+            </p>
+          </div>
+          <div class="box-item">
+            <div class="box"><i class="fa-solid fa-handshake-simple fa-3x"></i></div>
+            <p class="box-text">
+              Accredited <br />
+              Distributors
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       function toggleMenu() {
