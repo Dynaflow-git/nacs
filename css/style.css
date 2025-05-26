@@ -476,11 +476,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.custom-nav-bg {
-  background-color: #22212d;
-  border-radius: 0.5rem;
+#pills-tab button{
+  color: #232323;
 }
 
-.shop li button{
-  color: #fff;
+
+.shop ul li button{
+  color: #1d1d1d;
 }
