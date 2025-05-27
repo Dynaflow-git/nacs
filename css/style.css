@@ -480,6 +480,11 @@ footer {
   margin-bottom: 30px;
 }
 
+.nav-pills .nav-link.active {
+  background-color: #232323;
+  color: #ffffff !important;
+}
+
 #pills-tab button {
   color: #232323;
 }
