@@ -386,6 +386,10 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.text-align-end {
+  text-align: end;
+}
+
 /* FAQS */
 
 .faqs {
@@ -476,11 +480,10 @@ footer {
   margin-bottom: 30px;
 }
 
-#pills-tab button{
+#pills-tab button {
   color: #232323;
 }
 
-
-.shop ul li button{
+.shop ul li button {
   color: #1d1d1d;
 }
