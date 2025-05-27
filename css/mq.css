@@ -102,7 +102,7 @@
 
   /* layer1 */
   #layer1 {
-    height: 110vh;
+    max-height: 100%;
   }
 
   .background {
@@ -200,7 +200,8 @@
 
   footer {
     margin: 0 auto;
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
+    padding: clamp(150px, 2vw, 50px) clamp(15px, 4vw, 40px);
     height: auto;
   }
 
@@ -210,13 +211,17 @@
     width: 0 auto;
     padding: 0;
   }
-  .responsive-center {
-    text-align: center !important;
+
+  .text-align-end p {
+    text-align: center;
   }
 
+  .responsive-align {
+    text-align: center;
+  }
 
-  .footer-details span{
-    text-align: center !important;
+  .card-responsive {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -327,7 +332,13 @@
   .content {
     padding: clamp(90px, 2vw, 50px) clamp(15px, 4vw, 40px); /* top/bottom left/right */
     margin: 0;
-    height: 100%;
+    height: auto;
+  }
+
+  #layer1 {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .header {
@@ -365,6 +376,23 @@
   }
   .box-text {
     font-size: clamp(0.9375rem, 0.7143rem + 0.5952vw, 1rem);
+  }
+
+  .product {
+    padding: 50px 20px;
+    height: auto;
+    width: 100%;
+  }
+  .product-title p {
+    font-size: clamp(0.9375rem, -0.625rem + 5vw, 1.25rem);
+  }
+
+  .about-us {
+    padding: 50px 10px;
+  }
+
+  footer {
+    padding: 50px 10px;
   }
 }
 
@@ -476,7 +504,13 @@
   .content {
     padding: clamp(90px, 2vw, 50px) clamp(15px, 4vw, 40px); /* top/bottom left/right */
     margin: 0;
-    height: 100%;
+    height: auto;
+  }
+
+  #layer1 {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .header {
@@ -509,15 +543,42 @@
   }
 
   .box {
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 85px;
   }
-
-  .box-item {
-    font-size: 10px;
-  }
-
   .box-text {
-    font-size: clamp(0.75rem, -0.1429rem + 2.381vw, 1rem);
+    font-size: clamp(0.9375rem, 0.7143rem + 0.5952vw, 1rem);
+  }
+
+  .product {
+    padding: 50px 20px;
+    height: auto;
+  }
+  .product-title p {
+    font-size: clamp(0.9375rem, -0.625rem + 5vw, 1.25rem);
+  }
+
+  .about-us {
+    padding: 50px 40px;
+    height: auto;
+  }
+
+  #footer-row {
+    margin: 0 auto;
+    padding: 0;
+    width: 0 auto;
+    padding: 0;
+  }
+
+  .text-align-end p {
+    text-align: center;
+  }
+
+  .responsive-align {
+    text-align: center;
+  }
+
+  .card-responsive {
+    margin-bottom: 1.5rem;
   }
 }
