@@ -452,6 +452,7 @@
     font-size: clamp(0.9375rem, -1.9643rem + 7.7381vw, 1.75rem);
   }
 
+
   .nav-tabs {
     padding: 15px;
     align-items: center;
@@ -707,20 +708,7 @@
   .card-responsive {
     margin-bottom: 1.5rem;
   }
-
-  /* faqs */
-
-  .faqs {
-    margin: 0 auto;
-    padding: 50px 10px;
-    height: auto;
-    width: 100%;
-  }
-
-  .nav-tabs {
-    padding: 15px;
-  }
-
+  
   /* faqs */
 
   .faqs {

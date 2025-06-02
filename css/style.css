@@ -436,10 +436,19 @@ footer {
 
 #tac p {
   line-height: 1.5rem;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--first-font);
+  margin-top: 2rem;
+
 }
 
 #pac p {
   line-height: 1.8rem;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--first-font);
+  margin-top: 2rem;
 }
 
 #pac span {
