@@ -382,7 +382,7 @@
     height: auto;
   }
   .product-title p {
-    font-size: clamp(0.9375rem, -1.9643rem + 7.7381vw, 1.75rem);
+    font-size: clamp(1.25rem, 0.1254rem + 2.994vw, 1.5625rem);
   }
   .card {
     margin-bottom: 20px;
@@ -399,7 +399,7 @@
   #row-details {
     width: 100%;
     margin: 0 auto;
-    padding: 20px 100px;
+    padding: 50px 100px;
   }
 
   footer {
