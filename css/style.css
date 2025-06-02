@@ -433,12 +433,24 @@ footer {
   font-size: 25px;
   color: #000000;
 }
-#tac p{
- line-height: 1.5rem;
+
+#tac p {
+  line-height: 1.5rem;
 }
 
-.pre-title{
- font-size: 25px; 
+#pac p {
+  line-height: 1.8rem;
+}
+
+#pac span {
+  font-weight: bold;
+  font-family: var(--first-font);
+  font-size: 25px;
+  color: #000000;
+}
+
+.pre-title {
+  font-size: 25px;
 }
 
 #about,
