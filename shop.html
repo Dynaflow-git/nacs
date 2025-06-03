@@ -1,697 +1,1565 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./img/nacs-logo.png" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mq.css" />
-     <title>NACS US</title>
 
-    <!-- Boostrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./img/nacs-logo.png" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mq.css" />
+  <title>NACS US</title>
 
-    <!-- Font Awesome 6 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <!-- Boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-        <style>
-         
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-        </style>
+  <style>
 
-  </head>
-  <body>
-    <!-- header  -->
-    <container>
-      <div class="topbar">
-        <div class="row" id="hero">
-          <div class="col-3" id="col-hero">
-            <img src="./img/fb.png" alt="icon" />
-            <img src="./img/shopif.png" alt="icon" />
-          </div>
-          <div class="col-9" id="col-heroes">
-            <div class="icon-text">
-              <img src="./img/envelope.png" alt="icon" />
-              <span class="span">nacs-us@gmail.com</span>
-            </div>
-            <div class="icon-text">
-              <img src="./img/phone-call.png" alt="icon" />
-              <span class="span">+63 961 123 2546</span>
-            </div>
-            <div class="icon-text">
-              <img src="./img/time.png" alt="icon" />
-              <span class="span">Mon - Sat: 9:00am to 6:00pm</span>
-            </div>
-          </div>
+
+  </style>
+
+</head>
+
+<body>
+  <!-- header  -->
+  <container>
+    <div class="topbar">
+      <div class="row" id="hero">
+        <div class="col-3" id="col-hero">
+          <img src="./img/fb.png" alt="icon" />
+          <img src="./img/shopif.png" alt="icon" />
         </div>
-      </div>
-    </container>
-    <!-- nav bar -->
-    <nav>
-      <div class="logo">
-        <img src="./img/nacs-logo.png" alt="" />
-      </div>
-      <ul id="menuList">
-        <li class="close-btn">
-          <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
-        </li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="./shop.html">SHOP</a></li>
-        <!-- <li><a href="">BLOGS</a></li> -->
-        <li><a href="./faqs.html">FAQS</a></li>
-        <li><a href="./contact.html">CONTACT US</a></li>
-      </ul>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-      </div>
-    </nav>
-
-
- <!-- shops starts here -->
-<div class="shop">
-  <div class="container-fluid">
-          <ul class="nav nav-pills shadow p-3 mb-5 bg-body rounded" style=" border-radius: 0.5rem;" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-dark active shadow-sm me-2" id="pills-TMD-tab" data-bs-toggle="pill" data-bs-target="#pills-TMD" type="button" role="tab" aria-controls="pills-TMD" aria-selected="false">Test & Measurement Devices</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-dark shadow-sm me-2"  id="pills-VP-tab" data-bs-toggle="pill" data-bs-target="#pills-VP" type="button" role="tab" aria-controls="pills-VP" aria-selected="false">Valves & Plumbing</button>
-          </li>
-           <li class="nav-item" role="presentation">
-            <button class="nav-link text-dark shadow-sm me-2" id="pills-ES-tab" data-bs-toggle="pill" data-bs-target="#pills-ES" type="button" role="tab" aria-controls="pills-ES" aria-selected="false">Electronics & Semicon</button>
-          </li>
-           <li class="nav-item" role="presentation">
-            <button class="nav-link text-dark shadow-sm me-2" id="pills-PH-tab" data-bs-toggle="pill" data-bs-target="#pills-PH" type="button" role="tab" aria-controls="pills-PH" aria-selected="false">Pneumatics & Hydraulics</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-dark shadow-sm me-2" id="pills-electrical-tab" data-bs-toggle="pill" data-bs-target="#pills-electrical" type="button" role="tab" aria-controls="pills-electrical" aria-selected="false">Electrical</button>
-          </li>
-        </ul>
-
-        <div class="tab-content" id="pills-tabContent">
-          
-          <div class="tab-pane fade show active" id="pills-TMD" role="tabpanel" aria-labelledby="pills-TMD-tab">
-            <div class="tab-pane fade show" id="pills-RH" role="tabpanel" aria-labelledby="pills-RH-tab">
-
-                <!-- product view -->
-                <div class="row justify-content-center">
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div class="card h-100 d-flex flex-column" style="width: 18rem">
-                      <img
-                        src="./img/products/1.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">
-                          Economy Dial Plunger Indicator
-                        </h5>
-                        <p class="card-text">
-                          0 mm to 10 mm Measuring Range MC Master No.: 20715A83 System
-                          of Measurement: Metric Dial Indicator Type: Plunger
-                        </p>
-                        <div class="mt-auto">
-                          <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                           View Product
-                          </button>
-
-                          <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                     <div class="row">
-                                      <div class="col">
-                                        <img src="./img/products/1.jpg" alt="" class="img-fluid">
-                                      </div>
-                                      <div class="col">
-                                        <h5 class="card-title text-center">
-                                          Economy Dial Plunger Indicator
-                                        </h5>
-                                        <p class="card-text">
-                                          0 mm to 10 mm Measuring Range MC Master No.: 20715A83 System
-                                          of Measurement: Metric Dial Indicator Type: Plunger
-                                        </p>
-                                      </div>
-                                      <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       Contact Sales
-                                      </button>
-                                     </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                      <button type="button" class="btn btn-primary">Contact Sales</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/15.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">FLUKE-789 ProcessMeter™</h5>
-                        <p class="card-text">
-                          • 20 mA dc current source/measure/simulate<br> 
-                          • Simultaneous mA and % of scale readout<br>
-                          • Precision 1000 V, 440 mA true-rms digital multimeter<br>
-                          • Frequency measurement to 20 kHz<br>
-                          • 24 V Loop power supply<br>
-                          • HART mode setting with loop power, adds 250 ohm resistor
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/16.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">RS PRO TYPE K HEAVY DUTY THERMOCOUPLE</h5>
-                        <p class="card-text">
-                        The RS PRO Type K Heavy Duty Thermocouple features a 150mm stainless steel probe, operates from -60°C to +350°C, and includes a 2m braided cable. It's durable, fast-responding, and ideal for industrial and HVAC use.
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/17.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">OGP Smartscope Measuring Machine</h5>
-                        <p class="card-text">
-                          Contact and Non Contact
-                          Model: Smartscope E7
-                          Metrology software: Measure-X
-                          Travel size: X=250 x Y=150 x Z=200mm 25kg load capacity
-                          XY accuracy: E²=(2.2 + 5L/1000)µm*
-                          Z accuracy: E¹=(2.8 + 5L/1000)µm
-                        </p>
-                        <div class="mt-auto">
-                          <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
-             
-
+        <div class="col-9" id="col-heroes">
+          <div class="icon-text">
+            <img src="./img/envelope.png" alt="icon" />
+            <span class="span">nacs-us@gmail.com</span>
           </div>
+          <div class="icon-text">
+            <img src="./img/phone-call.png" alt="icon" />
+            <span class="span">+63 961 123 2546</span>
           </div>
-          <div class="tab-pane fade" id="pills-VP" role="tabpanel" aria-labelledby="pills-VP-tab">
-
-             <!-- product view -->
-                <div class="row justify-content-center">
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div class="card h-100 d-flex flex-column" style="width: 18rem">
-                      <img
-                        src="./img/products/18.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">
-                          STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS
-                        </h5>
-                        <p class="card-text">
-                        Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends. Designed for secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install, remove, and clean.
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/19.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GATE VALVE 1 1/4"</h5>
-                        <p class="card-text">
-                          A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or oil systems. It offers reliable sealing and minimal flow restriction, with common materials including brass or stainless steel.
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive ">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/9.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS</h5>
-                        <p class="card-text">
-                         Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends. Designed for secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install, remove, and clean.
-                        </p>
-                        <div class="mt-auto">
-                        <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/20.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GATE VALVE 1 1/4"</h5>
-                        <p class="card-text">
-                          A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or oil systems. It offers reliable sealing and minimal flow restriction, with common materials including brass or stainless steel.
-                        </p>
-                        <div class="mt-auto">
-                          <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
-          </div>
-          <div class="tab-pane fade" id="pills-ES" role="tabpanel" aria-labelledby="pills-ES-tab">
-
-            <div class="row justify-content-center">
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div class="card h-100 d-flex flex-column" style="width: 18rem">
-                      <img
-                        src="./img/products/21.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">
-                         DOORSENSOR GLS-1
-                        </h5>
-                        <p class="card-text">
-                        The Omron GLS-1 is a magnetic door sensor with a 15 mm sensing range, normally open contact, and 10 W switching capacity. It's durable, reliable, and ideal for security and automation use.
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/22.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">PLC MODEL: Q312B BASE</h5>
-                        <p class="card-text">
-                        The Mitsubishi Q312B is a 12-slot base unit for MELSEC-Q Series PLCs, supporting power, CPU, I/O, and special modules. It's DIN rail mountable and ideal for industrial automation setups
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/12.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">KG AUTO 25mm Push Button Switch Set (DC/AC, Illuminated & Non-Illuminated)</h5>
-                        <p class="card-text">
-                        The KG AUTO Push Button Switch series includes non-illuminated (KGF-JM1) and illuminated models for DC (KGX-JMD21) and AC (KGX-JMV21) voltages. These 25mm switches come in various LED colors and are ideal for industrial control panels.</p>
-                        <div class="mt-auto">
-                        <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/13.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">INVERTER  FR-E720-0.2  SALZER 4" X 4</h5>
-                        <p class="card-text">
-                        The Mitsubishi FR-E720-0.2K is a compact 0.2 kW inverter for precise motor control, featuring safety functions, USB/RS-485 ports, and a built-in display. It’s ideal for small industrial applications like conveyors and pumps.</p>
-                        <div class="mt-auto">
-                        <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
-          </div>
-          <div class="tab-pane fade" id="pills-PH" role="tabpanel" aria-labelledby="pills-PH-tab">
-            <!-- product view -->
-                <div class="row justify-content-center">
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div class="card h-100 d-flex flex-column" style="width: 18rem">
-                      <img
-                        src="./img/products/11.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">
-                         SMC AMC520-04 EXHAUST CLEANER
-                        </h5>
-                        <p class="card-text">
-                        The SMC AMC520-04 Exhaust Cleaner is designed for pneumatic systems, reducing noise by up to 35 dB(A) and removing over 99.9% of oil mist. It features a 1/2" Rc port, 95% filtration efficiency for 0.3 µm particles, and operates at pressures up to 0.1 MPa, ensuring clean and quiet air exhaust.</p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/25.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">AIR FILTER REGULATOR, AC40B-A; 1/2" PORT SIZE; SMC</h5>
-                        <p class="card-text">
-                         SMC AC40B-A Air Filter Regulator, 1/2" Port – Integrated filter and regulator unit for clean, regulated air in pneumatic systems.</p>
-                        <div class="mt-auto">
-                        <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/26.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">FILTER REGULATOR, AW40-A; 1/2" PORT SIZE; SMC</h5>
-                        <p class="card-text">
-                        SMC AW40-A Filter Regulator, 1/2" Port – Compact air filter regulator combining filtration and pressure regulation in one unit; ideal for pneumatic systems.</p>
-                        <div class="mt-auto">
-                          <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/27.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">KOGANEI FREE JOINT CJL-12X1.25-109W</h5>
-                        <p class="card-text">
-                        A floating joint designed for precise alignment in pneumatic systems, featuring a 12mm diameter and 1.25mm pitch thread. Ideal for applications requiring minimal friction and maintenance-free operation.</p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
-            
-          </div>
-          <div class="tab-pane fade" id="pills-electrical" role="tabpanel" aria-labelledby="pills-electrical-tab">
-                  <!-- product view -->
-                <div class="row justify-content-center">
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div class="card h-100 d-flex flex-column" style="width: 18rem">
-                      <img
-                        src="./img/products/10.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">
-                          STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS
-                        </h5>
-                        <p class="card-text">
-                        Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends. Designed for secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install, remove, and clean.
-                        </p>
-                        <div class="mt-auto">
-                         <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/6.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GATE VALVE 1 1/4"</h5>
-                        <p class="card-text">
-                          A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or oil systems. It offers reliable sealing and minimal flow restriction, with common materials including brass or stainless steel.
-                        </p>
-                        <div class="mt-auto">
-                        <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/23.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS</h5>
-                        <p class="card-text">
-                         Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends. Designed for secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install, remove, and clean.
-                        </p>
-                        <div class="mt-auto">
-                          <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-auto card-responsive">
-                    <!--  -->
-                    <div
-                      class="card h-100 d-flex flex-column"
-                      style="width: 18rem"
-                      height="25rem"
-                    >
-                      <img
-                        src="./img/products/24.jpg"
-                        class="card-img-top fixed-img"
-                        alt="image"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GATE VALVE 1 1/4"</h5>
-                        <p class="card-text">
-                          A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or oil systems. It offers reliable sealing and minimal flow restriction, with common materials including brass or stainless steel.
-                        </p>
-                        <div class="mt-auto">
-                          <a href="#" class="btn btn-primary w-100">View Product</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
+          <div class="icon-text">
+            <img src="./img/time.png" alt="icon" />
+            <span class="span">Mon - Sat: 9:00am to 6:00pm</span>
           </div>
         </div>
       </div>
     </div>
- </div>
+  </container>
+  <!-- nav bar -->
+  <nav>
+    <div class="logo">
+      <img src="./img/nacs-logo.png" alt="" />
+    </div>
+    <ul id="menuList">
+      <li class="close-btn">
+        <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+      </li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="./shop.html">SHOP</a></li>
+      <!-- <li><a href="">BLOGS</a></li> -->
+      <li><a href="./faqs.html">FAQS</a></li>
+      <li><a href="./contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
 
 
+  <!-- shops starts here -->
+  <div class="shop">
+    <div class="container-fluid">
+      <ul class="nav nav-pills shadow p-3 mb-5 bg-body rounded" style=" border-radius: 0.5rem;" id="pills-tab"
+        role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-dark active shadow-sm me-2" id="pills-TMD-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-TMD" type="button" role="tab" aria-controls="pills-TMD" aria-selected="false">Test &
+            Measurement Devices</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-dark shadow-sm me-2" id="pills-VP-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-VP" type="button" role="tab" aria-controls="pills-VP" aria-selected="false">Valves &
+            Plumbing</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-dark shadow-sm me-2" id="pills-ES-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-ES" type="button" role="tab" aria-controls="pills-ES"
+            aria-selected="false">Electronics & Semicon</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-dark shadow-sm me-2" id="pills-PH-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-PH" type="button" role="tab" aria-controls="pills-PH"
+            aria-selected="false">Pneumatics & Hydraulics</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-dark shadow-sm me-2" id="pills-electrical-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-electrical" type="button" role="tab" aria-controls="pills-electrical"
+            aria-selected="false">Electrical</button>
+        </li>
+      </ul>
 
+      <div class="tab-content" id="pills-tabContent">
 
+        <div class="tab-pane fade show active" id="pills-TMD" role="tabpanel" aria-labelledby="pills-TMD-tab">
+          <div class="tab-pane fade show" id="pills-RH" role="tabpanel" aria-labelledby="pills-RH-tab">
 
+            <!-- product view -->
+            <div class="row justify-content-center">
+              <div class="col-auto card-responsive">
+                <!--  -->
+                <div class="card h-100 d-flex flex-column" style="width: 18rem">
+                  <img src="./img/products/1.jpg" class="card-img-top fixed-img" alt="image" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-md-start">
+                      Economy Dial Plunger Indicator
+                    </h5>
+                    <p class="card-text">
+                      0 mm to 10 mm Measuring Range MC Master No.: 20715A83 System
+                      of Measurement: Metric Dial Indicator Type: Plunger
+                    </p>
+                    <div class="mt-auto">
+                      <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        View Product
+                      </button>
 
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 3rem;">
+                              <div class="row">
+                                <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                  <img src="./img/products/1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                  <h5 class="card-title text-md-start">
+                                    Economy Dial Plunger Indicator
+                                  </h5>
+                                  <p class="card-text">
+                                    0 mm to 10 mm Measuring Range MC Master No.: 20715A83 System
+                                    of Measurement: Metric Dial Indicator Type: Plunger
+                                  </p>
 
+                                  <p class="card-text">
 
+                                    Availability: Pre-Order <br>
+                                    Product Code: 20715A83 <br>
+                                    Product Number: 20715A83 <br>
 
+                                  </p>
 
-    <!-- footer -->
-   <footer>
-      <div class="container">
-        <div class="row g-4 py-4 px-2 text-center text-md-start" id="footer-row">
-          <div class="col-12 col-md-4">
-            <div class="logo-footer mb-3 mb-md-0">
-              <img src="./img/nacs-logo.png" alt="footer-logo" />
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="footer-details">
-              <p class="text-center">
-                <span class="span-title">Contact Info </span> <br>
-              </p>
-              <p class="text-center mt-2 d-block">
-                 112 N.Plymouth Way <br>
-                  San Bernardino CA 92408
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-             <div class="footer-details text-align-end">
-              <div class="mb-3 responsive-align">
-                <span class="span-title">Website</span>
-              </div>
-                  <div class="row mt-3">
-                    <div class="col responsive-center">
-                      <p><a href="./index.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Home</a></p>
-                      <p><a href="./shop.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Shop</a></p>
-                      <p><a href="./faqs.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">FAQS</a></p>
-                      <p><a href="" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Blog</a></p>
-                      <p><a href="./contact.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Contact us</a></p>
+                                  <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div class="col-auto card-responsive">
+                <!--  -->
+                <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                  <img src="./img/products/15.jpg" class="card-img-top fixed-img" alt="image" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">FLUKE-789 ProcessMeter™</h5>
+                    <p class="card-text">
+                      • 20 mA dc current source/measure/simulate<br>
+                      • Simultaneous mA and % of scale readout<br>
+                      • Precision 1000 V, 440 mA true-rms digital multimeter<br>
+                      • Frequency measurement to 20 kHz<br>
+                      • 24 V Loop power supply<br>
+                      • HART mode setting with loop power, adds 250 ohm resistor
+                    </p>
+                    <div class="mt-auto">
+                      <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        View Product
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 3rem;">
+                              <div class="row">
+                                <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                  <img src="./img/products/15.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                  <h5 class="card-title text-md-start">
+                                    FLUKE-789 ProcessMeter
+                                  </h5>
+                                  <p class="card-text">
+                                    • 20 mA dc current source/measure/simulate<br>
+                                    • Simultaneous mA and % of scale readout<br>
+                                    • Precision 1000 V, 440 mA true-rms digital multimeter<br>
+                                    • Frequency measurement to 20 kHz<br>
+                                    • 24 V Loop power supply<br>
+                                    • HART mode setting with loop power, adds 250 ohm resistor
+                                  </p>
+
+                                  <p class="card-text">
+
+                                    Availability: Pre-Order <br>
+                                    Product Code: 789 <br>
+                                    Product Number: 789 <br>
+
+                                  </p>
+
+                                  <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-auto card-responsive">
+                <!--  -->
+                <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                  <img src="./img/products/16.jpg" class="card-img-top fixed-img" alt="image" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">RS PRO TYPE K HEAVY DUTY THERMOCOUPLE</h5>
+                    <p class="card-text">
+                      The RS PRO Type K Heavy Duty Thermocouple features a 150mm stainless steel probe, operates from
+                      -60°C to +350°C, and includes a 2m braided cable. It's durable, fast-responding, and ideal for
+                      industrial and HVAC use.
+                    </p>
+                    <div class="mt-auto">
+                      <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">
+                        View Product
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel2">Product Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 3rem;">
+                              <div class="row">
+                                <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                  <img src="./img/products/16.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                  <h5 class="card-title text-md-start">
+                                    RS PRO TYPE K HEAVY DUTY THERMOCOUPLE
+                                  </h5>
+                                  <p class="card-text">
+                                    The RS PRO Type K Heavy Duty Thermocouple features a 150mm stainless steel probe,
+                                    operates from
+                                    -60°C to +350°C, and includes a 2m braided cable. It's durable, fast-responding, and
+                                    ideal for
+                                    industrial and HVAC use.
+                                  </p>
+
+                                  <p class="card-text">
+
+                                    Availability: Pre-Order <br>
+                                    Product Code: 20715A84 <br>
+                                    Product Number: 20715A84 <br>
+
+                                  </p>
+
+                                  <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-auto card-responsive">
+                <!--  -->
+                <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                  <img src="./img/products/17.jpg" class="card-img-top fixed-img" alt="image" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">OGP Smartscope Measuring Machine</h5>
+                    <p class="card-text">
+                      Contact and Non Contact
+                      Model: Smartscope E7
+                      Metrology software: Measure-X
+                      Travel size: X=250 x Y=150 x Z=200mm 25kg load capacity
+                      XY accuracy: E²=(2.2 + 5L/1000)µm*
+                      Z accuracy: E¹=(2.8 + 5L/1000)µm
+                    </p>
+                    <div class="mt-auto">
+                      <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal17">
+                        View Product
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel17"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel17">Product Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 3rem;">
+                              <div class="row">
+                                <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                  <img src="./img/products/17.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                  <h5 class="card-title text-md-start">
+                                    OGP Smartscope Measuring Machine
+                                  </h5>
+                                  <p class="card-text">
+                                    Contact and Non Contact
+                                    Model: Smartscope E7
+                                    Metrology software: Measure-X
+                                    Travel size: X=250 x Y=150 x Z=200mm 25kg load capacity
+                                    XY accuracy: E²=(2.2 + 5L/1000)µm*
+                                    Z accuracy: E¹=(2.8 + 5L/1000)µm
+                                  </p>
+
+                                  <p class="card-text">
+
+                                    Availability: Pre-Order <br>
+                                    Product Code: 20715A83 <br>
+                                    Product Number: 20715A83 <br>
+
+                                  </p>
+
+                                  <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-VP" role="tabpanel" aria-labelledby="pills-VP-tab">
+
+          <!-- product view -->
+          <div class="row justify-content-center">
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem">
+                <img src="./img/products/18.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">
+                    STAINLESS BALL VALVE, 1 1/4" FERRULE
+                  </h5>
+                  <p class="card-text">
+                    The Stainless Ball Valve 1 1/4" Ferrule is a durable and corrosion-resistant valve designed for easy
+                    and secure fluid control. Featuring a 1 1/4-inch ferrule connection, it provides a reliable,
+                    leak-free seal for industrial and commercial piping systems. Ideal for high-pressure and sanitary
+                    applications, this valve ensures smooth operation and long-lasting performance in various fluid
+                    handling processes.
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal18">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/18.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS
+                                </h5>
+                                <p class="card-text">
+                                  Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends.
+                                  Designed for
+                                  secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install,
+                                  remove, and
+                                  clean.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: 20715A83 <br>
+                                  Product Number: 20715A83 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/19.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">DN25 PN16"</h5>
+                  <p class="card-text">
+                    The DN25 PN16 is a high-quality valve or pipe fitting designed for fluid and gas systems. It
+                    features a nominal diameter of 25mm (DN25) and is rated for a pressure of up to 16 bar (PN16). Built
+                    for durability and reliability, it ensures secure, leak-free connections in medium to high-pressure
+                    applications. Ideal for industrial, commercial, and residential use.
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal19">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/19.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  DN25 PN16
+                                </h5>
+                                <p class="card-text">
+                                  The DN25 PN16 is a high-quality valve or pipe fitting designed for fluid and gas
+                                  systems. It features a nominal diameter of 25mm (DN25) and is rated for a pressure of
+                                  up to 16 bar (PN16). Built for durability and reliability, it ensures secure,
+                                  leak-free connections in medium to high-pressure applications. Ideal for industrial,
+                                  commercial, and residential use.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: DN25 PN16<br>
+                                  Product Number: DN25 PN16 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive ">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/9.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS</h5>
+                  <p class="card-text">
+                    Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends. Designed for
+                    secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install, remove, and
+                    clean.
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal9">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/9.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  STAINLESS BALL VALVE, 1" FERRULE, CLAMP CONNECTION BOTH ENDS
+                                </h5>
+                                <p class="card-text">
+                                  Durable stainless steel ball valve with 1" ferrule and clamp connections on both ends.
+                                  Designed for
+                                  secure, sanitary use in food, beverage, and pharmaceutical systems. Easy to install,
+                                  remove, and
+                                  clean.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: 20715A83 <br>
+                                  Product Number: 20715A83 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/20.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">GATE VALVE 1 1/4"</h5>
+                  <p class="card-text">
+                    A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or oil systems.
+                    It offers reliable sealing and minimal flow restriction, with common materials including brass or
+                    stainless steel.
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal20">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/20.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  GATE VALVE 1 1/4"
+                                </h5>
+                                <p class="card-text">
+                                  A 1 1/4" gate valve is a manual shut-off valve used to control flow in water, gas, or
+                                  oil systems.
+                                  It offers reliable sealing and minimal flow restriction, with common materials
+                                  including brass or
+                                  stainless steel.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: 20715A83 <br>
+                                  Product Number: 20715A83 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-ES" role="tabpanel" aria-labelledby="pills-ES-tab">
+
+          <div class="row justify-content-center">
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem">
+                <img src="./img/products/21.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">
+                    DOORSENSOR GLS-1
+                  </h5>
+                  <p class="card-text">
+                    The Omron GLS-1 is a magnetic door sensor with a 15 mm sensing range, normally open contact, and 10
+                    W switching capacity. It's durable, reliable, and ideal for security and automation use.
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal21">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/21.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  DOORSENSOR GLS-1
+                                </h5>
+                                <p class="card-text">
+                                  The Omron GLS-1 is a magnetic door sensor with a 15 mm sensing range, normally open
+                                  contact, and 10
+                                  W switching capacity. It's durable, reliable, and ideal for security and automation
+                                  use.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: GLS-1 <br>
+                                  Product Number: GLS-1 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/22.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">PLC MODEL: Q312B BASE</h5>
+                  <p class="card-text">
+                    The Mitsubishi Q312B is a 12-slot base unit for MELSEC-Q Series PLCs, supporting power, CPU, I/O,
+                    and special modules. It's DIN rail mountable and ideal for industrial automation setups
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal22">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/22.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  PLC MODEL: Q312B BASE
+                                </h5>
+                                <p class="card-text">
+                                  The Mitsubishi Q312B is a 12-slot base unit for MELSEC-Q Series PLCs, supporting
+                                  power, CPU, I/O,
+                                  and special modules. It's DIN rail mountable and ideal for industrial automation
+                                  setups
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: In Stock <br>
+                                  Product Code: Q312B <br>
+                                  Product Number: Q312B <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/12.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">KG AUTO 25mm Push Button Switch Set (DC/AC, Illuminated & Non-Illuminated)</h5>
+                  <p class="card-text">
+                    The KG AUTO Push Button Switch series includes non-illuminated (KGF-JM1) and illuminated models for
+                    DC (KGX-JMD21) and AC (KGX-JMV21) voltages. These 25mm switches come in various LED colors and are
+                    ideal for industrial control panels.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal23">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 2rem;">
+                            <div class="row">
+                              <div class="col me-4" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/12.jpg" alt="Product Image" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  KG AUTO 25mm Push Button Switch Set (DC/AC, Illuminated & Non-Illuminated)
+                                </h5>
+                                <p class="card-text">
+                                  The KG AUTO Push Button Switch series includes non-illuminated (KGF-JM1) and
+                                  illuminated models for
+                                  DC (KGX-JMD21) and AC (KGX-JMV21) voltages. These 25mm switches come in various LED
+                                  colors and are
+                                  ideal for industrial control panels.
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: GLS1-20715A83 <br>
+                                  Product Number: 20715A83 <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-4">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/13.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">INVERTER FR-E720-0.2 SALZER 4" X 4</h5>
+                  <p class="card-text">
+                    The Mitsubishi FR-E720-0.2K is a compact 0.2 kW inverter for precise motor control, featuring safety
+                    functions, USB/RS-485 ports, and a built-in display. It’s ideal for small industrial applications
+                    like conveyors and pumps.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal24">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/13.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  INVERTER FR-E720-0.2 SALZER 4" X 4
+                                </h5>
+                                <p class="card-text">
+                                  The Mitsubishi FR-E720-0.2K is a compact 0.2 kW inverter for precise motor control,
+                                  featuring safety functions, USB/RS-485 ports, and a built-in display. It’s ideal for
+                                  small industrial applications like conveyors and pumps.
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: FR-E720-0.2 <br>
+                                  Product Number: FR-E720-0.2 <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-PH" role="tabpanel" aria-labelledby="pills-PH-tab">
+          <!-- product view -->
+          <div class="row justify-content-center">
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem">
+                <img src="./img/products/11.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">
+                    SMC AMC520-04 EXHAUST CLEANER
+                  </h5>
+                  <p class="card-text">
+                    The SMC AMC520-04 Exhaust Cleaner is designed for pneumatic systems, reducing noise by up to 35
+                    dB(A) and removing over 99.9% of oil mist. It features a 1/2" Rc port, 95% filtration efficiency for
+                    0.3 µm particles, and operates at pressures up to 0.1 MPa, ensuring clean and quiet air exhaust.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal25">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/11.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  SMC AMC520-04 EXHAUST CLEANER
+                                </h5>
+                                <p class="card-text">
+                                  The SMC AMC520-04 Exhaust Cleaner is designed for pneumatic systems, reducing noise by
+                                  up to 35
+                                  dB(A) and removing over 99.9% of oil mist. It features a 1/2" Rc port, 95% filtration
+                                  efficiency for
+                                  0.3 µm particles, and operates at pressures up to 0.1 MPa, ensuring clean and quiet
+                                  air exhaust.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: AMC520-04 <br>
+                                  Product Number: AMC520-04 <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/25.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">AIR FILTER REGULATOR, AC40B-A; 1/2" PORT SIZE; SMC</h5>
+                  <p class="card-text">
+                    SMC AC40B-A Air Filter Regulator, 1/2" Port – Integrated filter and regulator unit for clean,
+                    regulated air in pneumatic systems.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal26">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/25.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  AIR FILTER REGULATOR, AC40B-A; 1/2" PORT SIZE; SMC
+                                </h5>
+                                <p class="card-text">
+                                  SMC AC40B-A Air Filter Regulator, 1/2" Port – Integrated filter and regulator unit for
+                                  clean,
+                                  regulated air in pneumatic systems.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: AC40B-A <br>
+                                  Product Number: AC40B-A <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/26.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">FILTER REGULATOR, AW40-A; 1/2" PORT SIZE; SMC</h5>
+                  <p class="card-text">
+                    SMC AW40-A Filter Regulator, 1/2" Port – Compact air filter regulator combining filtration and
+                    pressure regulation in one unit; ideal for pneumatic systems.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal27">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/26.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  FILTER REGULATOR, AW40-A; 1/2" PORT SIZE; SMC
+                                </h5>
+                                <p class="card-text">
+                                  SMC AW40-A Filter Regulator, 1/2" Port – Compact air filter regulator combining
+                                  filtration and
+                                  pressure regulation in one unit; ideal for pneumatic systems.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: AW40-A; <br>
+                                  Product Number: AW40-A; <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/27.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">KOGANEI FREE JOINT CJL-12X1.25-109W</h5>
+                  <p class="card-text">
+                    A floating joint designed for precise alignment in pneumatic systems, featuring a 12mm diameter and
+                    1.25mm pitch thread. Ideal for applications requiring minimal friction and maintenance-free
+                    operation.</p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal28">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal28" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/27.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  KOGANEI FREE JOINT CJL-12X1.25-109W
+                                </h5>
+                                <p class="card-text">
+                                  A floating joint designed for precise alignment in pneumatic systems, featuring a 12mm
+                                  diameter and
+                                  1.25mm pitch thread. Ideal for applications requiring minimal friction and
+                                  maintenance-free
+                                  operation.
+                                </p>
+
+                                <p class="card-text">
+
+                                  Availability: Pre-Order <br>
+                                  Product Code: CJL-12X1.25-109W <br>
+                                  Product Number: CJL-12X1.25-109W <br>
+
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Contact Sales</button>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-electrical" role="tabpanel" aria-labelledby="pills-electrical-tab">
+          <!-- product view -->
+          <div class="row justify-content-center">
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem">
+                <img src="./img/products/10.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-start">
+                    SJ-1225-HA2
+                  </h5>
+                  <p class="card-text">
+                    Size: 120x120x25mm <br>
+                    Frame: Aluminum ADC-12 <br>
+                    Bearing: Oil bearing & double ball bearing <br>
+                    Voltage: AC 110V 220V 380V440V <br>
+                    Life: 60 000Hours at 20 ℃ --ball bearing <br>
+                    30 000Hours at 20 ℃ --oil bearing <br>
+                    Working temperature: -20 ℃ ～ 85 ℃ normal humidity <br>
+                    Storage temperature: -30 ℃ ～ 140 ℃ normal humidity <br>
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#productModal29">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="productModal29" tabindex="-1" aria-labelledby="productModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/10.jpg" alt="Product Image" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  SJ-1225-HA2
+                                </h5>
+                                <p class="card-text">
+                                  Size: 120x120x25mm <br>
+                                  Frame: Aluminum ADC-12 <br>
+                                  Bearing: Oil bearing & double ball bearing <br>
+                                  Voltage: AC 110V 220V 380V440V <br>
+                                  Life: 60 000Hours at 20 ℃ --ball bearing <br>
+                                  30 000Hours at 20 ℃ --oil bearing <br>
+                                  Working temperature: -20 ℃ ～ 85 ℃ normal humidity <br>
+                                  Storage temperature: -30 ℃ ～ 140 ℃ normal humidity <br>
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: SJ-1225-HA2 <br>
+                                  Product Number: SJ-1225-HA2 <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/6.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">LSE Lighting GPH303T5L/4P GPH303T5L/4 Ultraviolet UV Lamp Bulb 4-pin Base 12"
+                  </h5>
+                  <p class="card-text">
+
+                    Type: UV Lamp - Wavelength: 254nm <br>
+                    Base Type: 4pin (4pins on one END) <br>
+                    Wattage: 15W <br>
+                    Length: 303mm (12 inches) <br>
+                    Operating Current: 425mA Standard output <br>
+                    Warning: Please Use safety gear during installation. <br>
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal30">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/6.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  LSE Lighting GPH303T5L/4P GPH303T5L/4 Ultraviolet UV Lamp Bulb 4-pin Base 12"
+                                </h5>
+                                <p class="card-text">
+                                  Type: UV Lamp - Wavelength: 254nm <br>
+                                  Base Type: 4pin (4pins on one END) <br>
+                                  Wattage: 15W <br>
+                                  Length: 303mm (12 inches) <br>
+                                  Operating Current: 425mA Standard output <br>
+                                  Warning: Please Use safety gear during installation. <br>
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: GPH303T5L <br>
+                                  Product Number: GPH303T5L <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/23.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">MAGNETCONTACTOR LC1D12M7</h5>
+                  <p class="card-text">
+                    The LC1-D12M7 is a 3-pole magnetic contactor by Schneider Electric, rated for 12A at
+                    400V AC. It is used for motor control and other industrial applications. The contactor
+                    features: <br>
+                    Coil Voltage: 24V to 230V AC/DC <br>
+                    Mechanical Durability: 10 million operations <br>
+                    Electrical Durability: 600,000 operations <br>
+                    IP Rating: IP20 <br>
+                    Control Voltage: AC/DC <br>
+                    Number of Contacts: 3 NO (Normally Open) <br>
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal31">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal31" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/23.jpg" alt="Product Image" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  MAGNETCONTACTOR LC1D12M7
+                                </h5>
+                                <p class="card-text">
+                                  The LC1-D12M7 is a 3-pole magnetic contactor by Schneider Electric, rated for 12A at
+                                  400V AC. It is used for motor control and other industrial applications. The contactor
+                                  features: <br>
+                                  Coil Voltage: 24V to 230V AC/DC <br>
+                                  Mechanical Durability: 10 million operations <br>
+                                  Electrical Durability: 600,000 operations <br>
+                                  IP Rating: IP20 <br>
+                                  Control Voltage: AC/DC <br>
+                                  Number of Contacts: 3 NO (Normally Open) <br>
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: LC1D12M7 <br>
+                                  Product Number: LC1D12M7 <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-auto card-responsive">
+              <!--  -->
+              <div class="card h-100 d-flex flex-column" style="width: 18rem" height="25rem">
+                <img src="./img/products/24.jpg" class="card-img-top fixed-img" alt="image" />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">MCCB GV2-ME06</h5>
+                  <p class="card-text">
+                    The GV2-ME06 is a 3-pole MCCB by Schneider Electric with a 6A rating and 415V AC voltage. Features
+                    include: <br>
+                    Thermal-magnetic trip (overload & short-circuit protection) <br>
+                    Breaking Capacity: 10kA <br>
+                    Adjustable Overload: 4A to 6A <br>
+                    Mounting: DIN rail <br>
+                    Temperature Range: -5°C to 40°C <br>
+                  </p>
+                  <div class="mt-auto">
+                    <button type="button" class="btn btn-primary mt-button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal32">
+                      View Product
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal32" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding: 3rem;">
+                            <div class="row">
+                              <div class="col me-5" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+                                <img src="./img/products/24.jpg" alt="Product Image" class="img-fluid">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-md-start">
+                                  MCCB GV2-ME06
+                                </h5>
+                                <p class="card-text">
+                                  The GV2-ME06 is a 3-pole MCCB by Schneider Electric with a 6A rating and 415V AC
+                                  voltage. Features
+                                  include: <br>
+                                  Thermal-magnetic trip (overload & short-circuit protection) <br>
+                                  Breaking Capacity: 10kA <br>
+                                  Adjustable Overload: 4A to 6A <br>
+                                  Mounting: DIN rail <br>
+                                  Temperature Range: -5°C to 40°C <br>
+                                </p>
+
+                                <p class="card-text">
+                                  Availability: Pre-Order <br>
+                                  Product Code: GV2-ME06 <br>
+                                  Product Number: GV2-ME06 <br>
+                                </p>
+
+                                <button type="button" class="btn btn-primary mt-5">Request for Quotation</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 py-4 px-2 text-center text-md-start" id="footer-row">
+        <div class="col-12 col-md-4">
+          <div class="logo-footer mb-3 mb-md-0">
+            <img src="./img/nacs-logo.png" alt="footer-logo" />
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-details">
+            <p class="text-center">
+              <span class="span-title">Contact Info </span> <br>
+            </p>
+            <p class="text-center mt-2 d-block">
+              112 N.Plymouth Way <br>
+              San Bernardino CA 92408
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-details text-align-end">
+            <div class="mb-3 responsive-align">
+              <span class="span-title">Website</span>
+            </div>
+            <div class="row mt-3">
+              <div class="col responsive-center">
+                <p><a href="./index.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Home</a>
+                </p>
+                <p><a href="./shop.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Shop</a>
+                </p>
+                <p><a href="./faqs.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">FAQS</a>
+                </p>
+                <p><a href="" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Blog</a></p>
+                <p><a href="./contact.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Contact
+                    us</a></p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -699,18 +1567,15 @@
 
         <p class="text-muted mt-5">© Copyright 2024, nacsinternational.com</p>
       </div>
-    </footer>
+  </footer>
 
-    <!-- Font awesome -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
