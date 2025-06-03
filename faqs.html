@@ -1,194 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./img/nacs-logo.png" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mq.css" />
-     <title>NACS US</title>
-        <style>
 
-        </style>
-    <!-- Boostrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./img/nacs-logo.png" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mq.css" />
+  <title>NACS US</title>
+  <style>
 
-    <!-- Font Awesome 6 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- header  -->
-    <container>
-      <div class="topbar">
-        <div class="row" id="hero">
-          <div class="col-3" id="col-hero">
-            <img src="./img/fb.png" alt="icon" />
-            <img src="./img/shopif.png" alt="icon" />
+  </style>
+  <!-- Boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- header  -->
+  <container>
+    <div class="topbar">
+      <div class="row" id="hero">
+        <div class="col-3" id="col-hero">
+          <img src="./img/fb.png" alt="icon" />
+          <img src="./img/shopif.png" alt="icon" />
+        </div>
+        <div class="col-9" id="col-heroes">
+          <div class="icon-text">
+            <img src="./img/envelope.png" alt="icon" />
+            <span class="span">nacs-us@gmail.com</span>
           </div>
-          <div class="col-9" id="col-heroes">
-            <div class="icon-text">
-              <img src="./img/envelope.png" alt="icon" />
-              <span class="span">nacs-us@gmail.com</span>
-            </div>
-            <div class="icon-text">
-              <img src="./img/phone-call.png" alt="icon" />
-              <span class="span">+63 961 123 2546</span>
-            </div>
-            <div class="icon-text">
-              <img src="./img/time.png" alt="icon" />
-              <span class="span">Mon - Sat: 9:00am to 6:00pm</span>
-            </div>
+          <div class="icon-text">
+            <img src="./img/phone-call.png" alt="icon" />
+            <span class="span">+63 961 123 2546</span>
+          </div>
+          <div class="icon-text">
+            <img src="./img/time.png" alt="icon" />
+            <span class="span">Mon - Sat: 9:00am to 6:00pm</span>
           </div>
         </div>
       </div>
-    </container>
-    <!-- nav bar -->
-    <nav>
-      <div class="logo">
-        <img src="./img/nacs-logo.png" alt="" />
-      </div>
-      <ul id="menuList">
-        <li class="close-btn">
-          <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
-        </li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="./shop.html">SHOP</a></li>
-        <!-- <li><a href="">BLOGS</a></li> -->
-        <li><a href="./faqs.html">FAQS</a></li>
-        <li><a href="./contact.html">CONTACT US</a></li>
-      </ul>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-      </div>
-    </nav>
-
-    <!-- FAQS starts here -->
-
-    <div class="container-fluid">
-        <div class="faqs">
-            <button type="button" class="btn btn-primary">FAQs</button>
-            <p class="text-title">
-              FREQUENTLY ASKED QUESTIONS
-              <span class="sub-title">HAVE YOU FIND FREQUENTLY ASKED QUESTIONS, WE WILL HELP YOU TO FIND THE ANSWER</span>
-            </p>
-
-            <!-- category -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">ABOUT NACS</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tac-tab" data-bs-toggle="tab" data-bs-target="#tac" type="button" role="tab" aria-controls="tac" aria-selected="false">TERMS AND CONDITION</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="oad-tab" data-bs-toggle="tab" data-bs-target="#oad" type="button" role="tab" aria-controls="oad" aria-selected="false">ORDER AND DELIVERY</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pac-tab" data-bs-toggle="tab" data-bs-target="#pac" type="button" role="tab" aria-controls="pac" aria-selected="false">PAYMENT AND CONDITION</button>
-              </li>
-            </ul>
-
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-                <p class="text-start .about">
-                  What is NACS? <br>
-                  <span class="sub-title">Northern American Consumable Solutions (NACS) is an online marketplace dedicated to providing customers with a wide range of products, including electrical components, packaging materials, HVAC systems, engineering tools, and industrial supplies. The platform is designed to meet the needs of individuals and businesses seeking quality materials and supplies in these sectors.</span>
-                </p>
-                <p class="text-start .about">
-                  What are the products offered by NACS <br>
-                  <span class="sub-title">Northern American Consumable Solutions (NACS) collaborates with reputable suppliers to offer a comprehensive range of products, including electrical components, packaging materials, HVAC systems, engineering tools, and industrial supplies. By leveraging these partnerships, NACS ensures the delivery of quality materials at competitive prices, meeting the diverse needs of its customers.</span>
-                </p>
-              </div>
-              <div class="tab-pane fade" id="tac" role="tabpanel" aria-labelledby="tac-tab">
-                
-                <p class="text-start .tac">
-                 <span class="title"> 
-                 Terms and Conditions <br> <br>
-                  1. Product Information </span> <br>
-                    North America Consumable Solutions (NACS) is committed to providing accurate and up-to-date information regarding its products, including pricing, availability, and specifications. While we strive for accuracy, NACS reserves the right to correct any errors or omissions at any time without prior notice.
-                  <br>
-                  <br>
-
-                   <span class="title"> 
-                  2. Ordering and Payment </span> <br>
-                    Customers may place orders through the NACS website, warehouse, or by contacting our sales representatives. Payment may be made through various channels, including online banking and payment gateways such as GCash or bank transfers. NACS reserves the right to cancel or decline any order at its sole discretion.
-                    <br>
-                    <br>
-
-                    <span class="title"> 
-                  3. Delivery </span> <br>
-                    NACS will deliver products in a timely and efficient manner. Delivery times and costs may vary depending on the customer’s location and product availability. NACS is not responsible for delays or damages caused by third-party delivery services.
-                    <br>
-                    <br>
-
-                    <span class="title"> 
-                  4. Returns and Refunds </span> <br>
-                    Customers may request a return or refund within the specified return period, provided that the product is in its original condition and packaging. All return and refund requests are subject to review, and NACS reserves the right to approve or deny such requests at its discretion. Approved refunds will be issued through the original payment method used for the purchase.
-                    <br>
-                    <br>
-
-                    <span class="title"> 
-                  5. Support Services </span> <br>
-                    NACS provides support services for its products as outlined in the respective product documentation. These services do not cover damage resulting from misuse, abuse, or unauthorized modifications. Additional charges may apply for out-of-warranty or non-standard support services.
-                    <br>
-                    <br>
-
-                     <span class="title"> 
-                  6. Privacy and Data Protection </span> <br>
-                    NACS is committed to protecting the privacy and security of customer information in accordance with its Privacy Policy. The use of cookies and similar tracking technologies may be employed to enhance user experience and analyze website traffic.
-                    <br>
-                    <br>
-
-                     <span class="title"> 
-                  7. Intellectual Property </span> <br>
-                    NACS owns or has obtained licenses for all intellectual property associated with its products and services, including but not limited to trademarks, copyrights, and patents. Customers are prohibited from using NACS or Buildhub PH intellectual property without prior written authorization.
-                    <br>
-                    <br>
-
-                     <span class="title"> 
-                  8. Agreement </span> <br>
-                    This agreement between NACS and its customers is governed by the laws of the United States. Any disputes arising from this agreement shall be resolved through arbitration or mediation in accordance with the rules of U.S. Dispute Resolution procedures
-                    <br>
-                    <br>
-            
-                </p>
-              </div>
-
-              <div class="tab-pane fade" id="oad" role="tabpanel" aria-labelledby="oad-tab">
-                <p class="text-start .about">
-                  What are the products offered by NACS <br>
-                  <span class="sub-title">Northern American Consumable Solutions (NACS) collaborates with reputable suppliers to offer a comprehensive range of products, including electrical components, packaging materials, HVAC systems, engineering tools, and industrial supplies. By leveraging these partnerships, NACS ensures the delivery of quality materials at competitive prices, meeting the diverse needs of its customers.</span>
-                </p>
-
-              </div>
-               <div class="tab-pane fade" id="pac" role="tabpanel" aria-labelledby="pac-tab">
-                    <p class="text-start .about">
-                      
-                     <span class="sub-title">What are the modes of payments accepted? </span>
-                        <br><br>
-                          We accept the following: <br>
-                          Pre-approved credit line through BuildCredit <br>
-                          Credit card payment using Visa or Master Card <br>
-                          Gcash, Dragonpay, Bancnet, Security Bank, BPI Online, PNB, BDO <br>
-                          Over the counter payments such as 7-11, ecpay, cliqq, Mlhuillier, Cebuana Lhuillier, Posible, Expresspay and truemoney. <br>
-                          Cash on Delivery (COD) <br>
-                       
-                    </p>
-               </div>
-
-            </div>
-        </div>
     </div>
-    
+  </container>
+  <!-- nav bar -->
+  <nav>
+    <div class="logo">
+      <img src="./img/nacs-logo.png" alt="" />
+    </div>
+    <ul id="menuList">
+      <li class="close-btn">
+        <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+      </li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="./shop.html">SHOP</a></li>
+      <!-- <li><a href="">BLOGS</a></li> -->
+      <li><a href="./faqs.html">FAQS</a></li>
+      <li><a href="./contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
+
+  <!-- FAQS starts here -->
+
+  <div class="container-fluid">
+    <div class="faqs">
+      <button type="button" class="btn btn-primary">FAQs</button>
+      <p class="text-title">
+        FREQUENTLY ASKED QUESTIONS
+        <span class="sub-title">HAVE YOU FIND FREQUENTLY ASKED QUESTIONS, WE WILL HELP YOU TO FIND THE ANSWER</span>
+      </p>
+
+      <!-- category -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button"
+            role="tab" aria-controls="about" aria-selected="true">ABOUT NACS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tac-tab" data-bs-toggle="tab" data-bs-target="#tac" type="button" role="tab"
+            aria-controls="tac" aria-selected="false">TERMS AND CONDITION</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="oad-tab" data-bs-toggle="tab" data-bs-target="#oad" type="button" role="tab"
+            aria-controls="oad" aria-selected="false">ORDER AND DELIVERY</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pac-tab" data-bs-toggle="tab" data-bs-target="#pac" type="button" role="tab"
+            aria-controls="pac" aria-selected="false">PAYMENT AND CONDITION</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+          <p class="text-start .about">
+            What is NACS? <br>
+            <span class="sub-title">Northern American Consumable Solutions (NACS) is an online marketplace dedicated to
+              providing customers with a wide range of products, including electrical components, packaging materials,
+              HVAC systems, engineering tools, and industrial supplies. The platform is designed to meet the needs of
+              individuals and businesses seeking quality materials and supplies in these sectors.</span>
+          </p>
+          <p class="text-start .about">
+            What are the products offered by NACS <br>
+            <span class="sub-title">Northern American Consumable Solutions (NACS) collaborates with reputable suppliers
+              to offer a comprehensive range of products, including electrical components, packaging materials, HVAC
+              systems, engineering tools, and industrial supplies. By leveraging these partnerships, NACS ensures the
+              delivery of quality materials at competitive prices, meeting the diverse needs of its customers.</span>
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tac" role="tabpanel" aria-labelledby="tac-tab">
+
+          <p class="text-start .tac">
+            <span class="title">
+              Terms and Conditions <br> <br>
+              1. Product Information </span> <br>
+            North America Consumable Solutions (NACS) is committed to providing accurate and up-to-date information
+            regarding its products, including pricing, availability, and specifications. While we strive for accuracy,
+            NACS reserves the right to correct any errors or omissions at any time without prior notice.
+            <br>
+            <br>
+
+            <span class="title">
+              2. Ordering and Payment </span> <br>
+            Customers may place orders through the NACS website, warehouse, or by contacting our sales representatives.
+            Payment may be made through various channels, including online banking and payment gateways such as GCash or
+            bank transfers. NACS reserves the right to cancel or decline any order at its sole discretion.
+            <br>
+            <br>
+
+            <span class="title">
+              3. Delivery </span> <br>
+            NACS will deliver products in a timely and efficient manner. Delivery times and costs may vary depending on
+            the customer’s location and product availability. NACS is not responsible for delays or damages caused by
+            third-party delivery services.
+            <br>
+            <br>
+
+            <span class="title">
+              4. Returns and Refunds </span> <br>
+            Customers may request a return or refund within the specified return period, provided that the product is in
+            its original condition and packaging. All return and refund requests are subject to review, and NACS
+            reserves the right to approve or deny such requests at its discretion. Approved refunds will be issued
+            through the original payment method used for the purchase.
+            <br>
+            <br>
+
+            <span class="title">
+              5. Support Services </span> <br>
+            NACS provides support services for its products as outlined in the respective product documentation. These
+            services do not cover damage resulting from misuse, abuse, or unauthorized modifications. Additional charges
+            may apply for out-of-warranty or non-standard support services.
+            <br>
+            <br>
+
+            <span class="title">
+              6. Privacy and Data Protection </span> <br>
+            NACS is committed to protecting the privacy and security of customer information in accordance with its
+            Privacy Policy. The use of cookies and similar tracking technologies may be employed to enhance user
+            experience and analyze website traffic.
+            <br>
+            <br>
+
+            <span class="title">
+              7. Intellectual Property </span> <br>
+            NACS owns or has obtained licenses for all intellectual property associated with its products and services,
+            including but not limited to trademarks, copyrights, and patents. Customers are prohibited from using NACS
+            or Buildhub PH intellectual property without prior written authorization.
+            <br>
+            <br>
+
+            <span class="title">
+              8. Agreement </span> <br>
+            This agreement between NACS and its customers is governed by the laws of the United States. Any disputes
+            arising from this agreement shall be resolved through arbitration or mediation in accordance with the rules
+            of U.S. Dispute Resolution procedures
+            <br>
+            <br>
+
+          </p>
+        </div>
+
+        <div class="tab-pane fade" id="oad" role="tabpanel" aria-labelledby="oad-tab">
+          <p class="text-start .about">
+            What are the products offered by NACS <br>
+            <span class="sub-title">Northern American Consumable Solutions (NACS) collaborates with reputable suppliers
+              to offer a comprehensive range of products, including electrical components, packaging materials, HVAC
+              systems, engineering tools, and industrial supplies. By leveraging these partnerships, NACS ensures the
+              delivery of quality materials at competitive prices, meeting the diverse needs of its customers.</span>
+          </p>
+
+        </div>
+        <div class="tab-pane fade" id="pac" role="tabpanel" aria-labelledby="pac-tab">
+          <p class="text-start .about">
+
+            <span class="sub-title">What are the modes of payments accepted? </span>
+            <br><br>
+            We accept the following: <br>
+            Pre-approved credit line through BuildCredit <br>
+            Credit card payment using Visa or Master Card <br>
+            Gcash, Dragonpay, Bancnet, Security Bank, BPI Online, PNB, BDO <br>
+            Over the counter payments such as 7-11, ecpay, cliqq, Mlhuillier, Cebuana Lhuillier, Posible, Expresspay and
+            truemoney. <br>
+            Cash on Delivery (COD) <br>
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
@@ -198,40 +224,45 @@
 
 
 
-    <!-- footer -->
-      <footer>
-      <div class="container">
-        <div class="row g-4 py-4 px-2 text-center text-md-start" id="footer-row">
-          <div class="col-12 col-md-4">
-            <div class="logo-footer mb-3 mb-md-0">
-              <img src="./img/nacs-logo.png" alt="footer-logo" />
-            </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 py-4 px-2 text-center text-md-start" id="footer-row">
+        <div class="col-12 col-md-4">
+          <div class="logo-footer mb-3 mb-md-0">
+            <img src="./img/nacs-logo.png" alt="footer-logo" />
           </div>
-          <div class="col-12 col-md-4">
-            <div class="footer-details">
-              <p class="text-center">
-                <span class="span-title">Contact Info </span> <br>
-              </p>
-              <p class="text-center mt-2 d-block">
-                 112 N.Plymouth Way <br>
-                  San Bernardino CA 92408
-              </p>
-            </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-details">
+            <p class="text-center">
+              <span class="span-title">Contact Info </span> <br>
+            </p>
+            <p class="text-center mt-2 d-block">
+              112 N.Plymouth Way <br>
+              San Bernardino CA 92408
+            </p>
           </div>
-          <div class="col-12 col-md-4">
-             <div class="footer-details text-align-end">
-              <div class="mb-3 responsive-align">
-                <span class="span-title">Website</span>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-details text-align-end">
+            <div class="mb-3 responsive-align">
+              <span class="span-title">Website</span>
+            </div>
+            <div class="row mt-3">
+              <div class="col responsive-center">
+                <p><a href="./index.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Home</a>
+                </p>
+                <p><a href="./shop.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Shop</a>
+                </p>
+                <p><a href="./faqs.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">FAQS</a>
+                </p>
+                <p><a href="" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Blog</a></p>
+                <p><a href="./contact.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Contact
+                    us</a></p>
               </div>
-                  <div class="row mt-3">
-                    <div class="col responsive-center">
-                      <p><a href="./index.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Home</a></p>
-                      <p><a href="./shop.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Shop</a></p>
-                      <p><a href="./faqs.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">FAQS</a></p>
-                      <p><a href="" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Blog</a></p>
-                      <p><a href="./contact.html" class="footer-link" style=" text-decoration: none; color:#1a1a1a ;">Contact us</a></p>
-                    </div>
-                  </div>
+            </div>
           </div>
         </div>
 
@@ -239,19 +270,16 @@
 
         <p class="text-muted mt-5">© Copyright 2024, nacsinternational.com</p>
       </div>
-    </footer>
+  </footer>
 
 
-    <!-- Font awesome -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

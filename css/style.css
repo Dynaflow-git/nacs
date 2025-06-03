@@ -271,19 +271,6 @@ body {
   object-fit: cover;
 }
 
-.mt-auto{
-  
-  justify-content: center !important; 
-  align-items: center !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  width: 100% !important;
-  height: auto !important;
-}
-
-.mt-button{
-  width: 100%;
-}
 
 
 
@@ -542,4 +529,18 @@ footer {
 
 .shop ul li button {
   color: #1d1d1d;
+}
+
+.mt-auto{
+  
+  justify-content: center !important; 
+  align-items: center !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.mt-button{
+  width: 100%;
 }
