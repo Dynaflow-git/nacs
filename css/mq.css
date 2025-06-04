@@ -435,6 +435,10 @@
     width: 100%;
   }
 
+  .tab-pane p{
+   font-size: clamp(0.875rem, 0.6501rem + 0.5988vw, 0.9375rem);
+  }
+
   .card-responsive {
     margin-bottom: 1.5rem;
   }
@@ -734,7 +738,7 @@
   }
 
   .tab-pane p {
-    font-size: clamp(0.625rem, -0.5064rem + 3.012vw, 0.9375rem);
+   font-size: clamp(0.875rem, 0.6501rem + 0.5988vw, 0.9375rem);
   }
 
   /* contact us */
