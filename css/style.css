@@ -545,6 +545,9 @@ footer {
   width: 100%;
 }
 
+.modal-body p{
+font-size: clamp(0.9375rem, 0.2627rem + 1.7964vw, 1.125rem);
+}
 
 /* button up scroll */
 #myBtn {
